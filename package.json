@@ -1,0 +1,19 @@
+{
+  "name": "fixture-helper",
+  "version": "1.0.0",
+  "description": "it should be easy to test with fixtures",
+  "main": "lib/index.js",
+  "author": "Jeremy Greer <jex.grizzle@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --verbose --bail"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.1.0",
+    "jest": "^23.4.1",
+    "regenerator-runtime": "^0.12.0"
+  }
+}
