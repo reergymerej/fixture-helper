@@ -12,9 +12,7 @@ It should be easy to use fixtures for your tests.
 
 Returns contents of `filePath` as string.
 
-**Example**
-
-```
+```js
 import { read } from 'fixture-helper'
 read('foo/bar.txt')
 ```
@@ -26,9 +24,9 @@ read('foo/bar.txt')
 
 Sets the base directory to use when `read`ing files.
 
-```
+```js
 import { setBaseDir, read } from 'fixture-helper'
-setBaseDir(__dirname + 'foo')
+setBaseDir('foo')
 read('bar.txt')  // foo/bar.txt
 ```
 
