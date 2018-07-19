@@ -18,3 +18,18 @@ describe('read', () => {
     )
   })
 })
+
+describe('setBaseDir', () => {
+  afterEach(() => {
+    app.setBaseDir()
+  })
+
+  it('should change where files are looked up from', () => {
+    const dir = path.resolve(fixtures, 'setBaseDir')
+    app.setBaseDir(dir)
+    app.read('a.txt')
+    expect(app.read('a.txt')).toBe(
+      getFixture('setBaseDir/a.txt')
+    )
+  })
+})

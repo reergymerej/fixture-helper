@@ -20,6 +20,19 @@ read('foo/bar.txt')
 ```
 
 
+### setBaseDir(dirPath)
+
+`dirPath` string
+
+Sets the base directory to use when `read`ing files.
+
+```
+import { setBaseDir, read } from 'fixture-helper'
+setBaseDir(__dirname + 'foo')
+read('bar.txt')  // foo/bar.txt
+```
+
+
 ## Dev
 
 ```
