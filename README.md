@@ -20,8 +20,8 @@ read('foo/bar.txt')
 
 ## Dev
 
-### Test
-
 ```
 yarn test
+yarn lint
+yarn build
 ```

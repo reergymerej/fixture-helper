@@ -6,7 +6,10 @@
   "author": "Jeremy Greer <jex.grizzle@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --verbose --bail"
+    "test": "jest --verbose --bail",
+    "lint": "eslint src",
+    "build": "babel src -d lib --ignore '*.test.js,__mocks__,fixtures/'",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
