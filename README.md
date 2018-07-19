@@ -2,6 +2,8 @@
 
 It should be easy to use fixtures for your tests.
 
+[![Build Status](https://travis-ci.org/reergymerej/fixture-helper.svg?branch=master)](https://travis-ci.org/reergymerej/fixture-helper)
+
 ## API
 
 ### read(filePath)
