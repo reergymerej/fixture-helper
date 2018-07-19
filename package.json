@@ -9,7 +9,7 @@
     "test": "jest --verbose --bail",
     "lint": "eslint src",
     "build": "babel src -d lib --ignore '*.test.js,__mocks__,fixtures/'",
-    "prepublish": "yarn build"
+    "prepublishOnly": "yarn build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
